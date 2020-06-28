@@ -1,28 +1,19 @@
 <template>
-  <div>
-    
+  <div class="feature">
+    <a href="https://www.baidu.com">
+      <img src="~assets/img/home/recommend_bg.jpg" alt="">
+    </a>
   </div>
 </template>
 
 <script>
-import {Swiper,SwiperItem} from 'components/common/swiper'
-
 export default {
-  name: 'HomeSwiper',
-  components: {
-    Swiper,
-    SwiperItem
-    },
-  props: {
-    banners: {
-      type:Array,
-      default(){
-        return []
-      }
-    }
-  }
+  name: 'FeatureView'
 }
 </script>
 
 <style>
+.feature img{
+  width:100%
+}
 </style>
